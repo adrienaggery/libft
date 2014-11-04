@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:39:47 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 20:25:13 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/04 20:27:19 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (len--)
 			*dst_copy-- = *src_copy--;
 	}
-		else
-	{
+	else
 		ft_memcpy(dst, src, len);
-	}
-		return (dst);
+	return (dst);
 }
