@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:36:27 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 12:34:49 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/04 17:16:40 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,14 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t		i;
+	char		*b_copy;
 
-	i = -1;
-	while (++i < len)
-		((char *)b)[i] = (unsigned char)c;
+	b_copy = b;
+	i = 0;
+	while (i < len)
+	{
+		b_copy[i] = (unsigned char)c;
+		i++;
+	}
 	return (b);
 }

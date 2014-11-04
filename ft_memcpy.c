@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:15:33 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/03 20:20:01 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/04 16:56:35 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,17 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int		i;
+	size_t		i;
+	char		*dst_copy;
+	char		*src_copy;
 
-	i = -1;
-	while (++i < n)
-		((char *)dst)[i] = ((char *)src)[i];
+	dst_copy = (char *)dst;
+	src_copy = (char *)src;
+	i = 0;
+	while (i < n)
+	{
+		dst_copy[i] = src_copy[i];
+		i++;
+	}
 	return (dst);
 }
