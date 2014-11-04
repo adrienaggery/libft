@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 17:15:33 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/03 20:20:01 by aaggery          ###   ########.fr       */
+/*   Created: 2014/11/03 18:45:24 by aaggery           #+#    #+#             */
+/*   Updated: 2014/11/04 12:34:08 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	int		i;
+	char	*ptr_dst;
+	char	*ptr_src;
 
-	i = -1;
-	while (++i < n)
-		((char *)dst)[i] = ((char *)src)[i];
-	return (dst);
+	i = 0;
+	ptr_dst = (char *)dst;
+	ptr_src = (char *)src;
+	while (i < n)
+	{
+		ptr_dst[i] = ptr_src[i];
+		if (ptr_src[i] == (unsigned char)c)
+			return (&ptr_dst[i + 1]);
+		i++;
+	}
+	return (NULL);
 }
