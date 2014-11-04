@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 18:45:24 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 21:01:50 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/04 21:04:39 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	dst_copy = (char *)dst;
 	src_copy = (char *)src;
 	while (n--)
-	{
 		if (*src_copy == (unsigned char)c)
 		{
 			*dst_copy++ = *src_copy++;
@@ -28,6 +27,5 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		}
 		else
 			*dst_copy++ = *src_copy++;
-	}
 	return (NULL);
 }
