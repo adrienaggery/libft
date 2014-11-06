@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 18:45:24 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 21:04:39 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/07 00:28:10 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		if (*src_copy == (unsigned char)c)
 		{
 			*dst_copy++ = *src_copy++;
-			return ((void *)(dst_copy + 1));
+			return ((void *)(dst_copy));
 		}
 		else
 			*dst_copy++ = *src_copy++;
