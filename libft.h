@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:31:17 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/06 13:03:30 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/06 15:34:46 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,10 @@ int			ft_atoi(const char *str);
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
+int			ft_isascii(int c);
+int			ft_isprint(int c);
+int			ft_isprint(int c);
+int			ft_toupper(int c);
+int			ft_tolower(int c);
 
 #endif
