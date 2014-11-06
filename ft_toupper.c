@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 13:16:28 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 22:06:45 by aaggery          ###   ########.fr       */
+/*   Created: 2014/11/06 15:27:35 by aaggery           #+#    #+#             */
+/*   Updated: 2014/11/06 15:33:46 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int		ft_toupper(int c)
 {
-	char	*s_copy;
-
-	s_copy = (char *)s;
-	while (n--)
-	{
-		if (*s_copy == (unsigned char)c)
-			return ((void *)s_copy);
-		s_copy++;
-	}
-	return (NULL);
+	return (c >= 'a' && c <= 'z' ? c - 32 : c);
 }

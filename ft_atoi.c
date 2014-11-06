@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 13:16:28 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 22:06:45 by aaggery          ###   ########.fr       */
+/*   Created: 2014/11/06 15:06:22 by aaggery           #+#    #+#             */
+/*   Updated: 2014/11/06 15:35:33 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int		ft_atoi(const char *str)
 {
-	char	*s_copy;
-
-	s_copy = (char *)s;
-	while (n--)
-	{
-		if (*s_copy == (unsigned char)c)
-			return ((void *)s_copy);
-		s_copy++;
-	}
-	return (NULL);
+	(void)str;
+	return (0);
 }
