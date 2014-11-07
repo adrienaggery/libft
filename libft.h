@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:31:17 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/06 15:34:46 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/07 12:42:31 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,7 @@ int			ft_isprint(int c);
 int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+
+void		*ft_memalloc(size_t size);
 
 #endif
