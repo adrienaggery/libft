@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:31:17 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/07 13:28:45 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/07 14:54:10 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,7 @@ void		*ft_memalloc(size_t size);
 void		ft_memdel(void **ap);
 char		*ft_strnew(size_t size);
 void		ft_strdel(char **as);
+void		ft_strclr(char *s);
+void		ft_striter(char *s, void (*f)(char *));
 
 #endif
