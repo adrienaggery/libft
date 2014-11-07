@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:16:28 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/04 22:06:45 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/07 12:47:30 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*s_copy;
+	unsigned char	*s_copy;
 
-	s_copy = (char *)s;
+	s_copy = (unsigned char *)s;
 	while (n--)
 	{
 		if (*s_copy == (unsigned char)c)
