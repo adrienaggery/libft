@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:31:17 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/08 14:49:15 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/08 18:12:30 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,6 @@ int			ft_strequ(char const *s1, char const *s2);
 int			ft_strnequ(char const *s1, char const *s2, size_t size);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strtrim(char const *s);
 
 #endif
