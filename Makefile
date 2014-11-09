@@ -6,7 +6,7 @@
 #    By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 18:04:05 by aaggery           #+#    #+#              #
-#    Updated: 2014/11/09 20:24:39 by aaggery          ###   ########.fr        #
+#    Updated: 2014/11/09 22:48:57 by aaggery          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,6 +55,7 @@ SRC = ft_memset.c \
 	ft_strsub.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
+	ft_itoa.c \
 	ft_putchar.c \
 	ft_putstr.c \
 	ft_putendl.c \
