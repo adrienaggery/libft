@@ -6,7 +6,7 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:31:17 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/09 19:26:47 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/09 19:55:40 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,7 @@ void		ft_putchar(char c);
 void		ft_putstr(char const *s);
 void		ft_putendl(char const *s);
 void		ft_putnbr(int nb);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putstr_fd(char c, int fd);
 
 #endif
