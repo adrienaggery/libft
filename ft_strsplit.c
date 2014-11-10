@@ -6,12 +6,11 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 23:47:50 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/10 17:12:49 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/10 17:16:04 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t		ft_strclen(char const *s, char c)
 {
