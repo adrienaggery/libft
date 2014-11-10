@@ -6,7 +6,7 @@
 #    By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 18:04:05 by aaggery           #+#    #+#              #
-#    Updated: 2014/11/10 18:20:48 by aaggery          ###   ########.fr        #
+#    Updated: 2014/11/10 18:45:26 by aaggery          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,8 @@ SRC = ft_memset.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	ft_lstnew.c \
-	ft_lstdelone.c
+	ft_lstdelone.c \
+	ft_lstdel.c \
 
 OBJ = $(SRC:.c=.o)
 
