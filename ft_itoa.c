@@ -6,12 +6,11 @@
 /*   By: aaggery <aaggery@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 20:38:36 by aaggery           #+#    #+#             */
-/*   Updated: 2014/11/09 23:44:54 by aaggery          ###   ########.fr       */
+/*   Updated: 2014/11/10 11:24:11 by aaggery          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t		nb_asize(int nb)
 {
